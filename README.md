@@ -49,11 +49,11 @@ make create-toolbox
     * Choose a region/az, and an Ubuntu AMI for that region
 
 * Generate the user terraform directories and create the user instances:
+    * You may also modify the [Makefile](Makefile) with the users if you don't want to type them out everytime
 ~~~
 make prepare-users USERS="user1 user2 ... userN"
 make create-users USERS="user1 user2 ... userN"
 ~~~
-    * You may also modify the [Makefile](Makefile) with the users if you don't want to type them out everytime
 
 * Once the deployments complete, review the `generated/trainees.yaml` and upload it to the toolbox:
 ~~~
